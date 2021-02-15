@@ -1,0 +1,19 @@
+<div style="border: 2px solid blue; margin: 10px">
+  <h2>Parent Component</h2>
+
+  <form [formGroup]="formGroup">
+    <app-child></app-child>
+  </form>
+
+  <button style="height: 20px; width: 70px" (click)="clear()">clear</button>
+  <button style="height: 20px; width: 70px" value="Submit" (click)="onSubmit()">
+    submit
+  </button>
+
+  <pre>
+  {{ formGroup.value | json }}
+</pre
+  >
+
+  <p>{{ formGroup.status }}</p>
+</div>

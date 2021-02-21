@@ -9,6 +9,10 @@ import { ChildComponent } from './components/child/child.component';
 import { GrandChildComponent } from './components/grand-child/grand-child.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MainMenuComponent } from './pages/main-menu/main-menu.component';
+
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -16,8 +20,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ParentComponent,
     ChildComponent,
     GrandChildComponent,
+    MainMenuComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, NgbModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    NgbModule,
+    NoopAnimationsModule,
+    MatListModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

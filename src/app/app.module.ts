@@ -9,6 +9,7 @@ import { ChildComponent } from './components/child/child.component';
 import { GrandChildComponent } from './components/grand-child/grand-child.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ChildComponent,
     GrandChildComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, NgbModule, NoopAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

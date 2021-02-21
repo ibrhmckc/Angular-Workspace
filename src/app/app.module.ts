@@ -10,6 +10,9 @@ import { GrandChildComponent } from './components/grand-child/grand-child.compon
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MainMenuComponent } from './pages/main-menu/main-menu.component';
+
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -17,8 +20,16 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     ParentComponent,
     ChildComponent,
     GrandChildComponent,
+    MainMenuComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, NgbModule, NoopAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    NgbModule,
+    NoopAnimationsModule,
+    MatListModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
